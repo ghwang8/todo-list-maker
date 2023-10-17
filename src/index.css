@@ -1,0 +1,158 @@
+/* Global Styles */
+.App {
+
+}
+.page-component-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header-title {
+  font-size: 1.8rem;
+  /* float: left; */
+}
+.header-btn {
+  font-size: 1.28rem;
+}
+.back-button {
+  height: 3rem;
+  width: 3rem;
+}
+.placeholder-txt {
+  width: 100%;
+  padding-top: 1.5rem;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Component Styles (Organized by main pages) */
+/* Color Selector */
+.color-selector {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.color-option.selected {
+  border: 2px solid #000;
+}
+/* Note Board */
+
+.noteboard-contents-container {
+  width: 100%;
+  position: relative;
+  height: 50vh;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+/* Create Note */
+
+.create-input-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 12vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.create-input {
+  border-style: groove;
+  border-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  /* display: block; */
+  margin: 0 auto;
+  bottom: 0;
+  width: 100%;
+  height: 6vh;
+  border-radius: 5px;
+  box-shadow: 0 0.29rem 5px 0 rgba(0, 0, 0, 0.35);
+}
+.create-task-container {
+  /* background-color: lightblue; */
+  height: 50vh;
+  overflow-y: scroll;
+  width: 100%;
+  margin: 0 auto;
+  /* overflow-y: auto; */
+}
+.create-note-btn-container {
+  text-align: center;
+}
+.create-note-btn {
+  display: block;
+  padding: 0.75rem 2.5rem;
+  width: 100%;
+  margin: 0.75rem auto;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.29rem 5px 0 rgba(0, 0, 0, 0.3);
+}
+.create-note-btn.create-list {
+  background-color: greenyellow;
+}
+.create-note-btn.go-to-noteboard {
+  background-color: orange;
+}
+
+/* Expanded Note */
+.header-img-container.expanded-note {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.expanded-list {
+  list-style-type: square;
+  font-size: 1.2rem;
+  flex: 1; /* Expand to fill remaining vertical space */
+  overflow-y: auto; /* Add vertical scrollbar if necessary */
+}
+.expanded-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 80vh;
+  /* height: 100%;  */
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 0.7rem 0.5rem 0;
+  box-shadow: 0 0.29rem 5px 0 rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+}
+.expanded-btm-container {
+  flex-shrink: 0; /* Prevent container from shrinking */
+  height: 3.5rem;
+  width: 100%;
+  display: inline-flex;
+}
+.expanded-icon {
+  margin: 0.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.expanded-list-btn {
+  margin-top: 0.85rem;
+  font-size: 1.1rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
